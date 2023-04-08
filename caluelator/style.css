@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width:100%;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-image: linear-gradient(#2196f2 ,#e91e63);
+}
+.bubbels{
+    position: absolute;
+    bottom:-100px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+}
+.bubbels span{
+    width:60px;
+    height:60px;
+    background-color: rgb(255, 255, 255, .1);
+    box-shadow: 0 20px 50px rgb( 0,0,0,.15) ;
+    backdrop-filter: blur(5px);
+    animation: move 10s linear infinite;
+    -webkit-animation: move 10s linear infinite;
+}
+@keyframes move{
+    100%{
+        transform: translateY(-90vh);
+        -webkit-transform: translateY(-90vh);
+        -moz-transform: translateY(-90vh);
+        -ms-transform: translateY(-90vh);
+        -o-transform: translateY(-90vh);
+}
+}
+.bubbels span.one{
+    animation-delay: 2.2s;
+    transform: scale(2);
+    -webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -ms-transform: scale(2);
+    -o-transform: scale(2);
+}
+.bubbels span.two{
+    animation-delay: 3.5s;
+    transform: scale(2);
+    -webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -ms-transform: scale(2);
+    -o-transform: scale(2);
+}
+.bubbels span.three{
+    animation-delay: .2s;
+    transform: scale(2);
+    -webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -ms-transform: scale(2);
+    -o-transform: scale(2);
+}
+.bubbels span.four{
+    animation-delay: 6s;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+.bubbels span.five{
+    animation-delay: 7s;
+    transform: scale(3);
+    -webkit-transform: scale(3);
+    -moz-transform: scale(3);
+    -ms-transform: scale(3);
+    -o-transform: scale(3);
+}
+.bubbels span.six{
+    animation-delay: 4s;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+.bubbels span.seven{
+    animation-delay: 5s;
+    transform: scale(2);
+    -webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -ms-transform: scale(2);
+    -o-transform: scale(2);
+}
+.container{
+    z-index: 100;
+    width:360px;
+    padding: 15px;
+    height:fit-content;
+    border-radius: 10px;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+
+    background-color: rgb(255, 255, 255, .1);
+    box-shadow: 0 20px 50px rgb( 0,0,0,.40);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.container input[type ="text"]{
+    width: 100%;
+    height: 100px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: #fff;
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.container input[type ="button"]{
+    height:50px;
+    width:77px;
+    border-radius: 15px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    margin: 5px 0;
+    font-size: 20px;
+    font-weight: bold;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    background-color: transparent;
+    color:#fff;
+    border-top:1px solid #fff
+
+}
